@@ -1,2 +1,2 @@
-# calculator.io
-simple arithemetic calculator website app
+# Calculator.io
+Simple arithemetic calculator web_app
