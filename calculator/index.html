@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator-cont"> 
+        <header class="input-cont">
+            <div class="input">
+                <input type="text" id="input" placeholder="0" class="dark" disabled>
+            </div>      
+            <div class="output">
+                <input type="number" id="output" class="dark" value="0" disabled>
+            </div>      
+        </header>
+        <main class="body">
+            <div class="keys">
+                <div class="row">
+                    <input type="button" value="7" class="key num-btn"></input>
+                    <input type="button" value="8" class="key num-btn"></input>
+                    <input type="button" value="9" class="key num-btn"></input>
+                </div>
+                <div class="row">
+                    <input type="button" value="4" class="key num-btn"></input>
+                    <input type="button" value="5" class="key num-btn"></input>
+                    <input type="button" value="6" class="key num-btn"></input>
+                </div>
+                <div class="row">
+                    <input type="button" value="1" class="key num-btn"></input>
+                    <input type="button" value="2" class="key num-btn"></input>
+                    <input type="button" value="3" class="key num-btn"></input>
+                </div>
+                <div class="row">
+                    <input type="button" value="." class="key dark"></input>
+                    <input type="button" value="0" class="key num-btn"></input>
+                    <input type="button" value="=" class="key dark"></input>
+                </div>
+            </div>
+            <div class="arSymbols">
+                <div class="col">
+                    <input type="button" value="C" class="key symb">
+                    <input type="button" value="/" class="key symb">
+                    <input type="button" value="-" class="key symb">
+                    <input type="button" value="+" class="key symb">
+                </div>
+                <div class="col">
+                    <input type="button" value="Del" class="key symb">
+                    <input type="button" value="%" class="key symb">
+                    <input type="button" value="x" class="key symb">
+                    <input type="button" value="**" class="key symb">
+                </div>
+            </div>
+            <div class="scientific">
+                <div class="row">
+                    <input type="button" value="INV" class="key symb">
+                    <input type="button" value="DEG" class="key symb">
+                    <input type="button" value="%" class="key symb">
+                </div>
+                <div class="row">
+                    <input type="button" value="sin" class="key symb">
+                    <input type="button" value="cos" class="key symb">
+                    <input type="button" value="tan" class="key symb">
+                </div>
+                <div class="row">
+                    <input type="button" value="ln" class="key symb">
+                    <input type="button" value="log" class="key symb">
+                    <input type="button" value="!" class="key symb">
+                </div>
+                <div class="row">
+                    <input type="button" value="PI" class="key symb">
+                    <input type="button" value="e" class="key symb">
+                    <input type="button" value="^" class="key symb">
+                </div>
+                <div class="row">
+                    <input type="button" value="(" class="key symb">
+                    <input type="button" value=")" class="key symb">
+                    <input type="button" value="sqr()" class="key symb">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

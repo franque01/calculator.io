@@ -1,0 +1,157 @@
+:root{
+    --color-dark: rgb(19, 18, 18);
+    --color-dark2: rgb(63, 55, 55);
+    --color-white: rgb(255, 255, 255);
+    --color-text: rgb(231, 230, 230);
+    --color-gray: gray;
+    --color-orange: rgb(255, 166, 0);
+    --font-family: sans-serif;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    overflow: hidden;
+}
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100dvw;
+    min-height: 100dvh;
+}
+div.calculator-cont{
+    position: relative;
+    min-width: 80dvw;
+    min-height: 80dvh;
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header.input-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-dark2);
+    width: 100%;
+
+}
+div.input, 
+div.output{
+    width: inherit;
+    background-color: rgba(240, 248, 255, 0.5);
+}
+input#input, 
+input#output{
+    background-color: var(--color-dark2) !important;
+    width: inherit;
+    text-align: right;
+    /* min-height: 10dvh !important; */
+    font-size: 34px;
+    background-color: var(--color-dark2);
+    color: var(--color-text);
+}
+
+input#input, div.input{
+    display: flex;
+    bottom: 0px !important;
+    line-height: 100px;
+    min-height: 22dvh !important;
+}
+input#output, div.output{
+    min-height: 8dvh !important;
+    color: rgba(255, 255, 255, 0.603)
+}
+main.body{
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+}
+div.keys, div.scientific{
+    min-width: 38vw;
+    background-color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & div.row{
+        min-width: 70%;
+        display: flex;
+        justify-content: space-between;
+        margin: 6px 0px;
+        /* background-color: wheat; */
+        & input.key{
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            margin: 2px 4px;
+            cursor: pointer;
+            color: var(--color-white);
+            font-size: 18px;
+            background-color: var(--color-gray);
+        }
+    }
+}
+div.arSymbols{
+    min-width: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: var(--color-gray);
+
+    & div.col{
+        display: flex;
+        flex-direction: column;
+        /* margin: 2px; */
+        min-height: 80%;
+        /* background-color: wheat; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 50%;
+        & input{
+            background-color: transparent;
+            color: var(--color-orange);
+            font-size: 18px;
+        }
+    }
+}
+div.scientific{
+    background-color: var(--color-orange);
+    & input.key{
+        background-color: transparent !important;
+    }
+}
+
+ @media (max-width: 550px) {
+    div.calculator-cont{
+        min-height: 100dvh;
+    }
+    main.body{
+        min-height: 70dvh;
+    }
+    header.input-cont{
+        min-height: 20dvh;
+    }
+    div.scientific{
+        position: fixed;
+        min-width: 90dvw;
+        height: 65dvh;
+        transform: translateX(98dvw) !important;
+    }
+    div.keys{
+        min-width: 70dvw;
+    }
+    div.arSymbols{
+        min-width: 30dvw;
+    }
+
+}
